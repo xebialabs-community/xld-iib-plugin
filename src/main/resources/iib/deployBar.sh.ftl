@@ -6,6 +6,10 @@
 
 -->
 
+if [ -f ${deployed.container.iib_home}/server/bin/mqsiprofile ]
+then
+   . ${deployed.container.iib_home}/server/bin/mqsiprofile
+fi
 
 ${deployed.container.iib_home}/server/bin/mqsideploy ${deployed.container.integration_node} -e ${deployed.container.integration_server} -a ${deployed.file} -w ${deployed.container.sleep}
 

@@ -6,12 +6,20 @@ FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALA
 
 def buildPlan( context ):
     deployed = delta.deployed
-    if len(deployed.properties) > 0 :
+    if len(deployed.preProperties) > 0 :
         context.addStep(steps.os_script(
             description = "Override Bar %s properties" % deployed.name,
             order = 60,
             script = "iib/applyBarOverride",
-            freemarker_context = {"user": "XebiaLabs"}
+            freemarker_context = {"myProperties": deployed.preProperties}
+        ))
+    # End if
+    if len(deployed.postProperties) > 0 :
+        context.addStep(steps.os_script(
+            description = "Override Bar %s properties" % deployed.name,
+            order = 80,
+            script = "iib/applyBarOverride",
+            freemarker_context = {"myProperties": deployed.postProperties}
         ))
     # End if
     context.addStep(steps.os_script(

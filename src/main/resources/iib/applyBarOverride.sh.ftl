@@ -6,11 +6,16 @@
 
 -->
 
-<#list deployed.properties?keys as prop>
-echo "${prop}=${deployed.properties[prop]}" >> override.properties
+if [ -f ${deployed.container.iib_home}/server/bin/mqsiprofile ]
+then
+   . ${deployed.container.iib_home}/server/bin/mqsiprofile
+fi
+
+<#list myProperties?keys as prop>
+echo "${prop}=${myProperties[prop]}" >> override.properties
 </#list>
 
-${deployed.container.iib_home}/server/bin/mqsiapplybaroverride -b ${deployed.file} -k ${deployed.appName} -p override.properties
+${deployed.container.iib_home}/server/bin/mqsiapplybaroverride -b ${deployed.file} -k ${deployed.name} -p override.properties
 
 rm override.properties
 
