@@ -1,0 +1,28 @@
+<!--
+
+    THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
+    FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
+
+-->
+
+<rules xmlns="http://www.xebialabs.com/xl-deploy/xl-rules">
+
+    <rule name="iib.BarDeploymentPlan" scope="deployed">
+        <conditions>
+            <type>iib.BarFile</type>
+            <operation>CREATE</operation>
+            <operation>MODIFY</operation>
+        </conditions>
+        <planning-script-path>iib/barDeploymentPlan.py</planning-script-path>
+    </rule>
+
+    <rule name="iib.BarUnDeployment" scope="deployed">
+        <conditions>
+            <type>iib.BarFile</type>
+            <operation>DESTROY</operation>
+        </conditions>
+        <planning-script-path>iib/barUnDeploymentPlan.py</planning-script-path>
+    </rule>
+
+</rules>
