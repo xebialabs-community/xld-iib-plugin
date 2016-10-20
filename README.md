@@ -11,7 +11,7 @@ This plugin allows XL Deploy to deploy and configure applications in an IBM Inte
 
 # Requirements #
 
-1. IBM Information Bus (IIB) 9.x or better
+1. IBM Integration Bus (IIB) 9.x or better
 2. XL Deploy 5.5 or better
 	
 
