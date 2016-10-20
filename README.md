@@ -58,5 +58,10 @@ Place the plugin JAR file into your `SERVER_HOME/plugins` directory.
 
 1. [mqsapplybaroverride](https://www.ibm.com/support/knowledgecenter/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an19545_.htm)
 2. [mqsideploy](https://www.ibm.com/support/knowledgecenter/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an28520_.htm)
-3. [automated build and deploy in websphere message broker using ant](http://blogs.perficient.com/ibm/2013/08/27/automated-build-and-deploy-in-websphere-message-broker-using-ant/)
+3. [mqsireadbar](https://www.ibm.com/support/knowledgecenter/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an26160_.htm)
+4. [mqsistart](https://www.ibm.com/support/knowledgecenter/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an28060_.htm)
+5. [mqsistop](https://www.ibm.com/support/knowledgecenter/en/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an28080_.htm)
+6. [mqsistartmsgflow](https://www.ibm.com/support/knowledgecenter/en/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an26100_.htm)
+7. [mqsistopmsgflow](https://www.ibm.com/support/knowledgecenter/en/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an26110_.htm)
+8. [automated build and deploy in websphere message broker using ant](http://blogs.perficient.com/ibm/2013/08/27/automated-build-and-deploy-in-websphere-message-broker-using-ant/)
 
