@@ -2,15 +2,18 @@
 
 [![Build Status](https://travis-ci.org/xebialabs-community/xld-datapower-plugin.svg?branch=master)](https://travis-ci.org/xebialabs-community/xld-datapower-plugin)
 
-# IBM Information Broker (IIB) plugin #
+# IBM Integration Bus (IIB) plugin #
 
 
 # Overview #
-This plugin allows XL Deploy to deploy and configure applications in an IBM Information Broker.
+This plugin allows XL Deploy to deploy and configure applications in an IBM Integration Bus.
 
 
 # Requirements #
 
+1. IBM Information Bus (IIB) 9.x or better
+2. XL Deploy 5.5 or better
+	
 
 # Installation #
 
