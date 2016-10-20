@@ -25,4 +25,8 @@
         <planning-script-path>iib/barUnDeploymentPlan.py</planning-script-path>
     </rule>
 
+    <rule name="iib.BarDeploymentRestartPlan" scope="plan">
+        <planning-script-path>iib/start-stop-server.py</planning-script-path>
+    </rule>
+
 </rules>

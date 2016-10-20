@@ -13,3 +13,5 @@ fi
 
 ${deployed.container.iib_home}/server/bin/mqsideploy ${deployed.container.integration_node} -e ${deployed.container.integration_server} -a ${deployed.file.path} -w ${deployed.container.sleep}
 
+${deployed.container.iib_home}/server/bin/mqsireadbar -b ${deployed.file.path} -r
+

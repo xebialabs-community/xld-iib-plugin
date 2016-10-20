@@ -17,5 +17,7 @@ echo "${prop}=${myProperties[prop]}" >> override.properties
 
 ${deployed.container.iib_home}/server/bin/mqsiapplybaroverride -b ${deployed.file.path} -k ${deployed.name} -p override.properties
 
+${deployed.container.iib_home}/server/bin/mqsireadbar -b ${deployed.file.path} -r
+
 rm override.properties
 

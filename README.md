@@ -32,6 +32,16 @@ Place the plugin JAR file into your `SERVER_HOME/plugins` directory.
 	|  integration_node    | Integration node name                    |
     |  integration_server  | Integration server name                  |
     
+    The IIB Server has several control tasks associated with it as follows:
+    
+    |  Task              |    Description                                           |
+    |--------------------|----------------------------------------------------------|
+    | Start Message Flow | Start IIB Execution Engine on an `integration_node` for an `integration_server` |
+    | Start Broker       | Start IIB Message Broker Server                          |
+    | Stop Message Flow  | Stop IIB Execution Engine on an `integration_node` for an `integration_server` |
+    | Stop Broker        | Stop IIB Message Broker Server                           |
+    
+    
     
     * **iib.BarFile**
     IIB `BAR` file to deploy on the `iib.Server`

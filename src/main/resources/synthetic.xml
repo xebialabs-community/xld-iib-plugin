@@ -21,6 +21,24 @@
         <property name="integration_node" required="true" />
         <property name="integration_server" required="true" />
         <property name="sleep"      required="true" default="900" hidden="true" />
+        <property name="startSleep" required="true" default="900" hidden="true" />
+        <property name="stopSleep"  required="true" default="900" hidden="true" />
+        <method name="startEE" label="Start Message Flow" description="Start IIB Execution Engine."
+                host="${thisCi.host}"
+                delegate="shellScript"
+                script="iib/startMsgFlow" />
+        <method name="startMB" label="Start Broker" description="Start IIB Message Broker Server."
+                host="${thisCi.host}"
+                delegate="shellScript"
+                script="iib/startServer" />
+        <method name="stopEE" label="Stop Message Flow" description="Stop IIB Execution Engine."
+                host="${thisCi.host}"
+                delegate="shellScript"
+                script="iib/stopMsgFlow" />
+        <method name="stopMB" label="Stop Broker" description="Stop IIB Message Broker Server."
+                host="${thisCi.host}"
+                delegate="shellScript"
+                script="iib/stopServer" />
     </type>
 
     <type type="iib.BarFile"

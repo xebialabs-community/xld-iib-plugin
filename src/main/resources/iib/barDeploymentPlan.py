@@ -17,7 +17,7 @@ def buildPlan( context ):
     if len(deployed.postProperties) > 0 :
         context.addStep(steps.os_script(
             description = "Override Bar %s properties" % deployed.name,
-            order = 80,
+            order = 75,
             script = "iib/applyBarOverride",
             freemarker_context = {"myProperties": deployed.postProperties}
         ))
