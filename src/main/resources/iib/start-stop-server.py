@@ -19,14 +19,14 @@ def containers():
 for container in containers():
     context.addStep(steps.os_script(
         description="Stopping Message Flow on %s" % container.name,
-        order=10,
+        order=90,
         script="iib/stopMsgFlow",
         freemarker_context={'container': container},
         target_host=container.host)
     )
     context.addStep(steps.os_script(
         description="Starting Message Flow on %s" % container.name,
-        order=90,
+        order=95,
         script="iib/startMsgFlow",
         freemarker_context={'container': container},
         target_host=container.host))
