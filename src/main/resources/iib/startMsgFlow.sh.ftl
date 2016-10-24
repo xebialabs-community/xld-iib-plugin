@@ -11,4 +11,4 @@ then
    . ${container.iib_home}/server/bin/mqsiprofile
 fi
 
-${container.iib_home}/server/bin/mqsistopmsgflow ${container.integration_node} -e ${container.integration_server} -w ${container.startSleep}
+${container.iib_home}/server/bin/mqsistartmsgflow ${container.integration_node} -e ${container.integration_server} -w ${container.startSleep}

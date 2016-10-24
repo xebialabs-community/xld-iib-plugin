@@ -11,4 +11,5 @@ then
    . ${previousDeployed.container.iib_home}/server/bin/mqsiprofile
 fi
 
-${previousDeployed.container.iib_home}/server/bin/mqsideploy ${previousDeployed.container.integration_node} -e ${previousDeployed.container.integration_server} -d ${previousDeployed.name} -w ${previousDeployed.container.sleep}
+#${previousDeployed.container.iib_home}/server/bin/mqsideploy ${previousDeployed.container.integration_node} -e ${previousDeployed.container.integration_server} -d ${previousDeployed.name} -w ${previousDeployed.container.sleep}
+echo "Fake undeploy"
