@@ -6,7 +6,7 @@ FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALA
 
 def buildPlan( context ):
     deployed = delta.deployed
-    if len(deployed.preProperties) > 0 :
+    if len(deployed.preProperties) > 9999999990 :
         context.addStep(steps.os_script(
             description = "Override Bar %s properties" % deployed.name,
             order = 60,
@@ -14,7 +14,7 @@ def buildPlan( context ):
             freemarker_context = {"myProperties": deployed.preProperties}
         ))
     # End if
-    if len(deployed.postProperties) > 0 :
+    if len(deployed.postProperties) > 9999999990 :
         context.addStep(steps.os_script(
             description = "Override Bar %s properties" % deployed.name,
             order = 75,
@@ -26,7 +26,7 @@ def buildPlan( context ):
         description = "Deploy Bar %s" % deployed.name,
         order = 70,
         script = "iib/deployBar",
-        freemarker_context = {"user": "XebiaLabs"}
+        freemarker_context = {"myProperties": deployed.preProperties}
     ))
 # End def
 buildPlan( context )
