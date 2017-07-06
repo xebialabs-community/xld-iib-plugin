@@ -1,6 +1,6 @@
 # Build status #
 
-[![Build Status](https://travis-ci.org/xebialabs-community/xld-datapower-plugin.svg?branch=master)](https://travis-ci.org/xebialabs-community/xld-datapower-plugin)
+[![Build Status](https://travis-ci.org/xebialabs-community/xld-iib-plugin.svg?branch=master)](https://travis-ci.org/xebialabs-community/xld-iib-plugin)
 
 # IBM Integration Bus (IIB) plugin #
 
