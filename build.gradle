@@ -1,30 +1,23 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
 plugins {
-    id "com.github.hierynomus.license" version "0.11.0"
+    id "com.github.hierynomus.license" version "0.14.0"
     id "com.xebialabs.xldp" version "1.0.5"
-    id "com.xebialabs.xld.docker" version "1.0.11"
+    id "nebula.release" version "6.0.0"
+    id "java"
 }
-
-defaultTasks 'build'
-version = '1.0.1-beta'
 
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
-group = 'com.xebialabs.deployit.community'
-def apiVersion = '5.1.4'
-
-xldDocker {
-    version = '5.5.3.1'
+if (!project.hasProperty('release.scope')) {
+    project.ext['release.scope'] = 'patch'
 }
 
-license {
-    header rootProject.file('src/main/license/xebialabs_community.license')
-    exclude "**/*.ftl"
-    strictCheck false
+if (!project.hasProperty('release.useLastTag')) {
+    project.ext['release.useLastTag'] = true
 }
 
 processResources.configure {
@@ -32,6 +25,13 @@ processResources.configure {
             'project.version': version.toString(),
             'project.name': rootProject.name
     ]
+}
+
+license {
+    header rootProject.file('License.md')
+    strictCheck false
+    ext.year = Calendar.getInstance().get(Calendar.YEAR)
+    ext.name = 'XEBIALABS'
 }
 
 
