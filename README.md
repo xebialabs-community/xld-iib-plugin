@@ -1,6 +1,21 @@
 # Build status #
 
-[![Build Status](https://travis-ci.org/xebialabs-community/xld-iib-plugin.svg?branch=master)](https://travis-ci.org/xebialabs-community/xld-iib-plugin)
+[![Build Status][xld-iib-plugin-travis-image]][xld-iib-plugin-travis-url]
+[![Codacy Badge][xld-iib-plugin-codacy-image]][xld-iib-plugin-codacy-url]
+[![Codeclimate Badge][xld-iib-plugin-codeclimate-image]][xld-iib-plugin-codeclimate-url]
+[![License: MIT][xld-iib-plugin-license-image]][xld-iib-plugin-license-url]
+![Github All Releases][xld-iib-plugin-downloads-image]
+
+[xld-iib-plugin-travis-image]: https://travis-ci.org/xebialabs-community/xld-iib-plugin.svg?branch=master
+[xld-iib-plugin-travis-url]: https://travis-ci.org/xebialabs-community/xld-iib-plugin
+[xld-iib-plugin-license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
+[xld-iib-plugin-license-url]: https://opensource.org/licenses/MIT
+[xld-iib-plugin-downloads-image]: https://img.shields.io/github/downloads/xebialabs-community/xld-iib-plugin/total.svg
+[xld-iib-plugin-codacy-image]: https://api.codacy.com/project/badge/Grade/99114736d2b9428f813bcd24f52e2a61
+[xld-iib-plugin-codacy-url]: https://www.codacy.com/app/zvercodebender/xld-iib-plugin?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=xebialabs-community/xld-iib-plugin&amp;utm_campaign=Badge_Grade
+[xld-iib-plugin-codeclimate-image]: https://api.codeclimate.com/v1/badges/a0e427804d6869a540d3/maintainability 
+[xld-iib-plugin-codeclimate-url]: https://codeclimate.com/github/xebialabs-community/xld-iib-plugin/maintainability
+
 
 # IBM Integration Bus (IIB) plugin #
 
