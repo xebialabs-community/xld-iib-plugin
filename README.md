@@ -66,10 +66,12 @@ Place the plugin JAR file into your `SERVER_HOME/plugins` directory.
     
     `iib.BarFile` extends `udm.BaseDeployedArtifact`
     
-    |  Properties          |          Description                    |
-    |----------------------|-----------------------------------------|
-    |    preProperties     |  Pre Deployment override properties     |
-    |    postProperties    |  Post Deployment override properties    |
+    |  Properties               |          Description                        |
+    |---------------------------|---------------------------------------------|
+    |    preProperties          |  Pre Deployment override properties         |
+    |    postProperties         |  Post Deployment override properties        |
+    |    completeDeployment     |  Add -m flag to deploy complete information |
+    |    restartAllApplications |  Add --restart-all-applications flag        | 
     
 
 ##References##
@@ -82,4 +84,5 @@ Place the plugin JAR file into your `SERVER_HOME/plugins` directory.
 6. [mqsistartmsgflow](https://www.ibm.com/support/knowledgecenter/en/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an26100_.htm)
 7. [mqsistopmsgflow](https://www.ibm.com/support/knowledgecenter/en/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an26110_.htm)
 8. [automated build and deploy in websphere message broker using ant](http://blogs.perficient.com/ibm/2013/08/27/automated-build-and-deploy-in-websphere-message-broker-using-ant/)
+9. [policies-overview](https://www.ibm.com/docs/en/app-connect/12.0?topic=policies-overview) (Restart all applications)
 

@@ -1,6 +1,6 @@
 <#--
 
-Copyright 2019 XEBIALABS
+Copyright 2022 XEBIALABS
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -33,7 +33,15 @@ rm /tmp/override.properties
 ########################################################
 #  Deploy BAR file
 #
+<@compress single_line=true>
 ${deployed.container.iib_home}/server/bin/mqsideploy ${deployed.container.integration_node} -e ${deployed.container.integration_server} -a /tmp/deployable.bar -w ${deployed.container.sleep}
+<#if deployed.completeDeployment == true>
+-m
+</#if>
+<#if deployed.restartAllApplications == true>
+--restart-all-applications
+</#if>
+</@compress>
 
 ########################################################
 #  Display BAR deploy status
@@ -41,4 +49,3 @@ ${deployed.container.iib_home}/server/bin/mqsideploy ${deployed.container.integr
 ${deployed.container.iib_home}/server/bin/mqsireadbar -b /tmp/deployable.bar -r
 
 rm /tmp/deployable.bar
-
